@@ -7,17 +7,17 @@ Welcome to assembly lets make your life a bit easier to you linux users
 
 first things first we need to install/check some dependencies
 -------------------------------------------------------------
-### Make sure your locate command in shell is updated, `sudo updatedb && locate -e bench-repo`
-### Install wine with aptitude to help with dependecy tree on ubuntu 18.04
+#### 1. Make sure your locate command in shell is updated, `sudo updatedb && locate -e bench-repo`
+#### 2. Install wine with aptitude to help with dependecy tree on ubuntu 18.04
 1. `Sudo apt install aptitude`
 2. `Sudo aptitude install wine-stable`
-### Install linux quartus lite (I am running v.19.1.0)
-### make sure the altera De0-cv board is being detected by external jtag
+#### 3. Install linux quartus lite (I am running v.19.1.0)
+#### 4. make sure the altera De0-cv board is being detected by external jtag
 1. to check plug in board to usb then navigate to /home/user/intelFPGA_lite/19.1/quartus/bin (or where ever quartus was installed) then run ./jtagconfig the output should look like the below picture.
 2. if there is a issue with permission then run this command to fix the root acces to jtag `wget https://raw.githubusercontent.com/atomminer/QuartusTweaks/master/usbblaster.sh && chmod +x usbblaster.sh && ./usbblaster.sh`
   more info on the script can be found at this link, [link to webpage](https://blog.atomminer.com/fighting-altera-usb-blaster-on-ubuntu/)
 3. furthermore, if you now have issues where the board recognizes the usb blaster name but says "Unable to read device chain - JTAG chain broken" then I havent found a fix to this issue yet except unplugging/replugging in, switching usb ports, turning device off with red button instead of usb. one of these will make it get recognized just test it with the jtagconfig file listed above.
-### use your IDE of choice to code assembly, I personally use atom and it has a few 8051 markups to make life nice.
+#### 5. use your IDE of choice to code assembly, I personally use atom and it has a few 8051 markups to make life nice.
 
 Now that we have our device being detected on the computer clone this repo 
 -------------------------------------------------------------------------

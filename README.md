@@ -29,10 +29,20 @@ compiling and flashing the code
 to compile the code open a terminal in the folder containing our *.asm file 
 #### important!! make sure the path to this file contains no spaces as winepaths wont be able to properly parse it.
 now to compile your assembly files use the command,
+
 `hexcompile filename.asm`
+
+-------------
+
 this will compile the *.asm file into a *.hex file inside the same directory, if their is a error the error message will be displayed in the terminal
-now to flash your device, make sure it is connected with ./jtagconfig if it is good then use 
+
+
+now to flash your device, make sure it is connected with ./jtagconfig if it is good then use,
+
 `flash filename.hex`
+
+-----
+
 and voila no more cross IDE and your stuff works on linux without needing a shitty VM like virtual box (trust me you dont want to use it your computer will hate you)
 
 

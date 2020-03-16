@@ -21,7 +21,7 @@ first things first we need to install/check some dependencies
 
 Now that we have our device being detected on the computer clone this repo 
 -------------------------------------------------------------------------
-###after cloning
+##after cloning
 1. add source to bash for convience `echo 'source ~/path_to_folder/CrossIDE_compiler_linux/cross_utils.sh' >> ~/.bashrc `
 
 compiling and flashing the code

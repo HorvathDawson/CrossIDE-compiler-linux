@@ -2,7 +2,7 @@
 Derived from zacharyrodwatkins https://github.com/zacharyrodwatkins/CrossIDE
 
 
-Welcome to assembly lets make your life a bit easier to you linux users
+Welcome to assembly. lets make your life a bit easier to you linux users
 =======================================================================
 
 first things first we need to install/check some dependencies
